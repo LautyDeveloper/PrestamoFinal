@@ -1,0 +1,293 @@
+:root {
+  --backgroundPrincipal: #15151a;
+  --backgroundSecundario: #202020;
+  --grisInput: #353535;
+  --azul: #1747f2;
+  --verde: #00ff29;
+  --rojo: #ff0000;
+}
+
+.notebooks {
+  width: 100%;
+}
+.content-notebooks {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  height: 100%;
+  gap: 5%;
+}
+.content-notebooks div {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: var(--grisInput);
+}
+
+.content-notebooks .seleccionado {
+  background-color: var(--azul);
+}
+
+.content-notebooks .no-disponible {
+  background-color: #b9b9b9;
+  cursor: not-allowed;
+}
+
+.notebooks-container-editar .seleccionado {
+  background-color: var(--azul);
+}
+
+.notebooks-container-editar .no-disponible {
+  background-color: #b9b9b9;
+  cursor: not-allowed;
+}
+
+.form-editar {
+  background-color: var(--backgroundSecundario);
+  width: 90%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  border-radius: 40px;
+  transition: all 0.2s ease;
+  margin-top: 10%;
+}
+.form-editar form .contenido-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: none;
+}
+.form-editar .contenido-form .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+}
+.form-editar .contenido-form .modal--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+.form-editar .contenido-form .modal .dispositivos {
+  margin: auto;
+  width: 80%;
+  height: auto;
+  background-color: var(--backgroundSecundario);
+  border-radius: 10px;
+  display: grid;
+  gap: 1em;
+  padding: 20px;
+  border-radius: 40px;
+  place-items: center;
+  transition: all 0.2s ease;
+}
+
+.notebooks-container-editar {
+  background-color: var(--grisInput);
+  border-radius: 30px;
+  padding: 30px;
+  gap: 1em;
+  width: 100%;
+  display: none;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.notebooks-container-editar div {
+  color: #fff;
+  background-color: #15151a;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.form-editar .contenido-form .modal .dispositivos .content {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-editar .contenido-form .modal .dispositivos .content .arriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 5%;
+}
+.form-editar .contenido-form .modal .dispositivos .content .arriba h3 {
+  color: white;
+  font-size: 1.7rem;
+}
+.form-editar .contenido-form .modal .dispositivos .content .inputs {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 75%;
+  gap: 1em;
+}
+.form-editar .contenido-form .modal .dispositivos .content .inputs .dato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+}
+.form-editar .contenido-form .modal .dispositivos .content .inputs .dato p {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.form-editar
+  .contenido-form
+  .modal
+  .dispositivos
+  .content
+  .inputs
+  .dato
+  .button {
+  width: 40%;
+  height: 60%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 20pc;
+  background-color: var(--grisInput);
+  display: grid;
+  place-items: center;
+  color: white;
+}
+.form-editar
+  .contenido-form
+  .modal
+  .dispositivos
+  .content
+  .inputs
+  .dato
+  .button
+  span {
+  transition: all 0.4s ease;
+}
+.form-editar .contenido-form .modal .dispositivos .content .inputs .notebooks {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.form-editar
+  .contenido-form
+  .modal
+  .dispositivos
+  .content
+  .inputs
+  .notebooks
+  .content {
+  width: auto;
+  height: 100%;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(6, 40px);
+  grid-template-rows: repeat(5, 1fr);
+}
+.form-editar
+  .contenido-form
+  .modal
+  .dispositivos
+  .content
+  .inputs
+  .notebooks
+  .content
+  label {
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.form-editar
+  .contenido-form
+  .modal
+  .dispositivos
+  .content
+  .inputs
+  .notebooks
+  .content
+  label
+  input {
+  display: none;
+}
+
+.form-editar
+  .contenido-form
+  .modal
+  .dispositivos
+  .content
+  .inputs
+  .notebooks
+  .content
+  label
+  span {
+  display: inline-block;
+  position: relative;
+  background: var(--backgroundPrincipal);
+  transition: all 0.7s;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+}
+.form-editar
+  .contenido-form
+  .modal
+  .dispositivos
+  .content
+  .inputs
+  .notebooks
+  .content
+  label
+  input:checked
+  ~ span {
+  background-color: #1747f2;
+}
+
+.form-editar .contenido-form .modal .dispositivos .content .inputs .dato input {
+  width: 40%;
+  height: 60%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: var(--grisInput);
+  outline: none;
+  border: none;
+}
+.form-editar .contenido-form .modal .dispositivos .content .inputs .dato label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+}
+.form-editar .contenido-form .modal .dispositivos .content button {
+  height: 11%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--azul);
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}

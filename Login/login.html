@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>E.E.S.T.N5</title>
+  </head>
+  <body>
+    <section class="formulario-iniciosesion">
+      <h1>¡Bienvenido de nuevo!</h1>
+      <form id="formulario-sesion">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" /><br /><br />
+
+        <input type="submit" id="btn-login" value="Iniciar sesión" />
+      </form>
+      <a href="../Sign_Up/signup.html">Crear una nueva cuenta</a>
+    </section>
+  </body>
+  <script type="module" src="../assets/JS/login.js"></script>
+  <script type="module" src="../assets/JS/firebaseConnect.js"></script>
+</html>

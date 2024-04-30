@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>E.E.S.T.N5</title>
+  </head>
+  <body>
+    <header>
+      <a href="Historial/historial.html" class="iniciar-sesion"><img src="assets/media/historia.png" alt=""></a>
+      <div class="abrir_user"><img src="assets/media/usuario.png" alt=""></div>
+      <div class="modal_user">
+        <div class="dispositivos_user">
+          <div class="content_user">
+            <div class="arriba">
+              <img src="assets/media/cerrar (1).png"class="cerrar-modal_user"></img>
+            </div>
+            <p>Usuario Actual:</p>
+            <p class="usuario"></p>
+            <button class="cerrar_sesion">Cerrar Sesion</button>
+            <a class="inciar_sesion" href="Login/login.html">Iniciar Sesion</a>
+          </div>
+        </div>
+      </div>
+      <div class="abrir-disponibles"><img src="assets/media/ojo.png" alt=""></div>
+      <div class="modal_disponibles">
+        <div class="dispositivos_disponibles">
+          <div class="content_disponibles">
+            <div class="arriba">
+              <p class="cerrar-modal_disponibles">Cerrar</p>
+            </div>
+            <p class="ver_disponibles"></p>
+            <div class="notebooks_disponibles" abierto="no">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+              <div>11</div>
+              <div>12</div>
+              <div>13</div>
+              <div>14</div>
+              <div>15</div>
+              <div>16</div>
+              <div>17</div>
+              <div>18</div>
+              <div>19</div>
+              <div>20</div>
+              <div>21</div>
+              <div>22</div>
+              <div>23</div>
+              <div>24</div>
+              <div>25</div>
+              <div>26</div>
+              <div>27</div>
+              <div>28</div>
+              <div>29</div>
+              <div>30</div>
+            </div>
+            <p class="antenas_disponibles"></p>
+            <p class="teclados_disponibles"></p>
+            <p class="mouses_disponibles"></p>
+            <p class="teles_disponibles"></p>
+          </div>
+        </div>
+      </div>
+      <a href="No_Conex/No_Conex.html"><img src="assets/media/sin-senal.png" alt=""></a>
+    </header>
+    <div class="form">
+      <form action="" id="form">
+        <div class="menu-form" abierto="no">
+          <img src="assets/media/cerrar-ventana.png" alt="" class="cerrar" />
+          <h2>AGREGAR PRESTAMO</h2>
+        </div>
+        <div class="contenido-form">
+          <div class="dato">
+            <label for="prestamoCurso">Curso</label>
+            <input class="input-curso" type="text" name="prestamoCurso" id="" />
+          </div>
+          <div class="dato">
+            <label for="prestamoProfesor">Profesor</label>
+            <input class="input-profe" type="text" name="prestamoProfesor" id="" />
+          </div>
+          <div class="dispositivos-button">
+            <p>Dispositivos</p>
+            <p>+</p>
+          </div>
+          <div class="modal">
+            <div class="dispositivos">
+              <div class="content">
+                <div class="arriba">
+                  <h3>Dispositivos</h3>
+                  <img
+                    src="assets/media/cerrar-ventana.png"
+                    alt=""
+                    class="cerrar-modal"
+                  />
+                </div>
+                <div class="inputs">
+                  <div class="dato">
+                    <p>NoteBooks</p>
+                    <div class="button">
+                      <span class="abrir-notebooks">V</span>
+                    </div>
+                  </div>
+                  <div class="notebooks" abierto="false">
+                    <div class="content">
+                      
+                    </div>
+                  </div>
+                  <div class="dato">
+                    <label for="">Mouses</label>
+                    <input class="input-mouses" type="number" />
+                  </div>
+                  <div class="dato">
+                    <label for="">Antenas</label>
+                    <input class="input-antenas" type="number" />
+                  </div>
+                  <div class="dato">
+                    <label for="">Televisores</label>
+                    <input class="input-teles" type="number" />
+                  </div>
+                  <div class="dato">
+                    <label for="">Teclados</label>
+                    <input class="input-teclados" type="number" />
+                  </div>
+                </div>
+                <button class="btn-confirmar">Confirmar</button>
+              </div>
+            </div>
+            <p class="err_modal"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <section class="prestamos">
+      <div class="cartas-container">
+        <div class="ventana-editar">
+          <div class="contenido-editar">
+            <div class="cerrar-container">
+              <img class="editar-boton-cerrar" src="./assets/media/cerrar (1).png" alt="boton cerrar ventana" />
+            </div>
+
+            <p>Notebooks <span class="notebooks-editar-mas">v</span></p>
+            <div estado="cerrado" class="notebooks-prestamo-editar">
+              
+            </div>
+
+            <p>
+              Mouse's: <span class="num-mouses"></span> <span class="mouses-mas">+</span>
+              <span class="mouses-menos">-</span>
+            </p>
+            <p>
+              Antenas: <span class="num-antenas"></span>  <span class="antenas-mas">+</span>
+              <span class="antenas-menos">-</span>
+            </p>
+            <p>
+              Teclados: <span class="num-teclados"></span>  <span class="teclados-mas">+</span>
+              <span class="teclados-menos">-</span>
+            </p>
+            <p>
+              Teles: <span class="num-teles"></span>  <span class="teles-mas">+</span>
+              <span class="teles-menos">-</span>
+            </p>
+            <button class="btn-guardar-cambios">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="assets/JS/form.js"></script>
+  <script src="assets/JS/gestionDeUsuario.js"></script>
+  <script src="assets/JS/modal.js"></script>
+  <script src="assets/JS/notebooks.js"></script>
+  <script src="assets/JS/notebooksDisponibles.js"></script>
+  <script src="assets/JS/modalDisponibles.js" type="module"></script>
+  <script type="module" src="assets/JS/firebaseConnect.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+  <script type="module" src="./assets/JS/prestamos.js"></script>
+  <script src="./assets/JS/modalEditar.js"></script>
+</html>

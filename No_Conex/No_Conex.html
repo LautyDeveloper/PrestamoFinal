@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="noconex.css" />
+    <title>E.E.S.T.N5</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"
+        ><img src="../assets/media/volver-flecha-izquierda.png" alt=""
+      /></a>
+      <p>¡Estas sin Conexion, esto se guardara, en el LocalStorage!</p>
+    </header>
+    <div class="form">
+      <form action="" id="form">
+        <div class="menu-form" abierto="no">
+          <img src="../assets/media/cerrar-ventana.png" alt="" class="cerrar" />
+          <h2>AGREGAR PRESTAMO</h2>
+        </div>
+        <div class="contenido-form">
+          <div class="dato">
+            <label for="prestamoCurso">Curso</label>
+            <input type="text" name="prestamoCurso" id="curso" />
+          </div>
+          <div class="dato">
+            <label for="prestamoProfesor">Profesor</label>
+            <input type="text" name="prestamoProfesor" id="profe" />
+          </div>
+          <div class="dispositivos-button">
+            <p>Dispositivos</p>
+            <p>+</p>
+          </div>
+          <div class="modal">
+            <div class="dispositivos">
+              <div class="content">
+                <div class="arriba">
+                  <h3>Dispositivos</h3>
+                  <img
+                    src="../assets/media/cerrar-ventana.png"
+                    alt=""
+                    class="cerrar-modal"
+                  />
+                </div>
+                <div class="inputs">
+                  <div class="dato">
+                    <p>NoteBooks</p>
+                    <div class="button">
+                      <span class="abrir-notebooks">V</span>
+                    </div>
+                  </div>
+                  <div class="notebooks" abierto="false">
+                    <div class="content-notebooks"></div>
+                  </div>
+                  <div class="dato">
+                    <label for="">Mouses</label>
+                    <input type="number" id="mouse" />
+                  </div>
+                  <div class="dato">
+                    <label for="">Antenas</label>
+                    <input type="number" id="antenas" />
+                  </div>
+                  <div class="dato">
+                    <label for="">Televisores</label>
+                    <input type="number" id="tv" />
+                  </div>
+                  <div class="dato">
+                    <label for="">Teclados</label>
+                    <input type="number" id="teclado" />
+                  </div>
+                </div>
+                <button id="enviarPrestamo">Confirmar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <section class="prestamos">
+      <div class="cartas-container"></div>
+    </section>
+    <form action="" class="form-editar">
+      <div class="contenido-form">
+        <div class="modal-editar modal">
+          <div class="dispositivos">
+            <div class="content">
+              <div class="arriba">
+                <h3>Dispositivos</h3>
+                <img
+                  src="../assets/media/cerrar-ventana.png"
+                  alt=""
+                  class="cerrar-modal cerrar-modal-editar"
+                />
+              </div>
+              <div class="inputs">
+                <div class="dato">
+                  <p>NoteBooks</p>
+                  <div class="button btn-abrir-nets" cerrado="si">
+                    <span class="abrir-notebooks">V</span>
+                  </div>
+                </div>
+                <div class="notebooks-container-editar"></div>
+                <div class="dato">
+                  <label for="">Mouses</label>
+                  <input type="number" id="mouse" class="mouses-input" />
+                </div>
+                <div class="dato">
+                  <label for="">Antenas</label>
+                  <input type="number" id="antenas" class="antenas-input" />
+                </div>
+                <div class="dato">
+                  <label for="">Televisores</label>
+                  <input type="number" id="tv" class="teles-input" />
+                </div>
+                <div class="dato">
+                  <label for="">Teclados</label>
+                  <input type="number" id="teclado" class="teclados-input" />
+                </div>
+              </div>
+              <button class="btn-actualizar" id="update">Actualizar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="../assets/JS/form.js"></script>
+  <script src="../assets/JS/modal.js"></script>
+  <script src="../assets/JS/notebooks.js"></script>
+  <script src="../assets/JS/desdecero.js"></script>
+</html>
